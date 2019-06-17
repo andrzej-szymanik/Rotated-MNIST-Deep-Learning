@@ -1,0 +1,86 @@
+#!/bin/bash -e
+
+CUR_DIR=`pwd`
+cd "${1}"
+    for ((i=1; i<=20; i++)) do
+        for file in $i.jpg; do
+            convert "${file}" -distort ScaleRotateTranslate 30 "${file}";
+            
+        done
+    done
+    
+         for ((i=21; i<=40; i++)) do
+        for file in $i.jpg; do
+            convert "${file}" -distort ScaleRotateTranslate 60 "${file}";
+            
+        done
+    done
+        
+        
+             for ((i=41; i<=60; i++)) do
+        for file in $i.jpg; do
+            convert "${file}" -distort ScaleRotateTranslate 90 "${file}";
+            
+        done
+    done
+    
+                 for ((i=61; i<=80; i++)) do
+        for file in $i.jpg; do
+            convert "${file}" -distort ScaleRotateTranslate 120 "${file}";
+            
+        done
+    done
+    
+                    for ((i=81; i<=100; i++)) do
+        for file in $i.jpg; do
+            convert "${file}" -distort ScaleRotateTranslate 150 "${file}";
+            
+        done
+    done
+        
+                             for ((i=101; i<=120; i++)) do
+        for file in $i.jpg; do
+            convert "${file}" -distort ScaleRotateTranslate 180 "${file}";
+            
+        done
+    done
+    
+                                 for ((i=121; i<=140; i++)) do
+        for file in $i.jpg; do
+            convert "${file}" -distort ScaleRotateTranslate 210 "${file}";
+            
+        done
+    done
+        
+                                         for ((i=141; i<=160; i++)) do
+        for file in $i.jpg; do
+            convert "${file}" -distort ScaleRotateTranslate 240 "${file}";
+            
+        done
+    done
+        
+        
+                                                 for ((i=161; i<=180; i++)) do
+        for file in $i.jpg; do
+            convert "${file}" -distort ScaleRotateTranslate 270 "${file}";
+            
+        done
+    done
+        
+                                                        for ((i=181; i<=190; i++)) do
+        for file in $i.jpg; do
+            convert "${file}" -distort ScaleRotateTranslate 300 "${file}";
+            
+        done
+    done
+        
+                                                               for ((i=191; i<=200; i++)) do
+        for file in $i.jpg; do
+            convert "${file}" -distort ScaleRotateTranslate 330 "${file}";
+            
+        done
+    done
+        
+        
+cd CUR_DIR 
+ 
